@@ -45,7 +45,7 @@ def add_resturant(p_Resturant_ID:object,p_Resturant_Name: object,p_Country_Code:
     df_add_resturant = pd.DataFrame(data_add_resturant)
 
     # append data frame to CSV file
-    df_add_resturant.to_csv('zomatolowercase.csv', mode='a', index=False, header=False)
+    df_add_resturant.to_csv('zomato.csv', mode='a', index=False, header=False)
 
 
 #Function to Add rating in CSV file
@@ -65,7 +65,7 @@ def add_resturant_rating(p_User_ID:object,p_Resturant_Id: object, p_Rating: obje
     df_resturant_rating = pd.DataFrame(data_resturant_rating)
 
     # append data frame to CSV file
-    df_resturant_rating.to_csv('RatingsF.csv', mode='a', index=False, header=False)
+    df_resturant_rating.to_csv('Ratings.csv', mode='a', index=False, header=False)
 
 
 # main recommendation function
